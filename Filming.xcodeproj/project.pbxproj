@@ -14,6 +14,17 @@
 		C2E73D372BFAE1F2002122B1 /* FilmingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D362BFAE1F2002122B1 /* FilmingTests.swift */; };
 		C2E73D412BFAE1F2002122B1 /* FilmingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D402BFAE1F2002122B1 /* FilmingUITests.swift */; };
 		C2E73D432BFAE1F2002122B1 /* FilmingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D422BFAE1F2002122B1 /* FilmingUITestsLaunchTests.swift */; };
+		C2FC29912BFB869A00F8F929 /* Canon_AE-1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC29882BFB869A00F8F929 /* Canon_AE-1.usdz */; };
+		C2FC29922BFB869A00F8F929 /* Konica_c35.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC29892BFB869A00F8F929 /* Konica_c35.usdz */; };
+		C2FC29932BFB869A00F8F929 /* Leica_M6.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298A2BFB869A00F8F929 /* Leica_M6.usdz */; };
+		C2FC29942BFB869A00F8F929 /* Minolta_X-300.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298B2BFB869A00F8F929 /* Minolta_X-300.usdz */; };
+		C2FC29952BFB869A00F8F929 /* Olympus_PBR.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298C2BFB869A00F8F929 /* Olympus_PBR.usdz */; };
+		C2FC29972BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298E2BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz */; };
+		C2FC29982BFB869A00F8F929 /* Yashica_FX3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298F2BFB869A00F8F929 /* Yashica_FX3.usdz */; };
+		C2FC299A2BFB879500F8F929 /* PENTAX_K1000.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC29992BFB879500F8F929 /* PENTAX_K1000.usdz */; };
+		C2FC299C2BFB8B8800F8F929 /* SceneKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC299B2BFB8B8800F8F929 /* SceneKitView.swift */; };
+		C2FC299E2BFB9CC700F8F929 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC299D2BFB9CC700F8F929 /* SplashScreenView.swift */; };
+		C2FC29A02BFBA47500F8F929 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC299F2BFBA47500F8F929 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,18 @@
 		C2E73D3C2BFAE1F2002122B1 /* FilmingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E73D402BFAE1F2002122B1 /* FilmingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmingUITests.swift; sourceTree = "<group>"; };
 		C2E73D422BFAE1F2002122B1 /* FilmingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2FC29882BFB869A00F8F929 /* Canon_AE-1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Canon_AE-1.usdz"; sourceTree = "<group>"; };
+		C2FC29892BFB869A00F8F929 /* Konica_c35.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Konica_c35.usdz; sourceTree = "<group>"; };
+		C2FC298A2BFB869A00F8F929 /* Leica_M6.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Leica_M6.usdz; sourceTree = "<group>"; };
+		C2FC298B2BFB869A00F8F929 /* Minolta_X-300.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Minolta_X-300.usdz"; sourceTree = "<group>"; };
+		C2FC298C2BFB869A00F8F929 /* Olympus_PBR.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Olympus_PBR.usdz; sourceTree = "<group>"; };
+		C2FC298E2BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "vintage_minolta_x-700_camera.usdz"; sourceTree = "<group>"; };
+		C2FC298F2BFB869A00F8F929 /* Yashica_FX3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Yashica_FX3.usdz; sourceTree = "<group>"; };
+		C2FC29992BFB879500F8F929 /* PENTAX_K1000.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = PENTAX_K1000.usdz; sourceTree = "<group>"; };
+		C2FC299B2BFB8B8800F8F929 /* SceneKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitView.swift; sourceTree = "<group>"; };
+		C2FC299D2BFB9CC700F8F929 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		C2FC299F2BFBA47500F8F929 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C2FC29A22BFBA6AB00F8F929 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +97,8 @@
 		C2E73D192BFAE1F0002122B1 = {
 			isa = PBXGroup;
 			children = (
+				C2FC29A22BFBA6AB00F8F929 /* Config.xcconfig */,
+				C2FC29902BFB869A00F8F929 /* 3DModel */,
 				C2E73D242BFAE1F0002122B1 /* Filming */,
 				C2E73D352BFAE1F2002122B1 /* FilmingTests */,
 				C2E73D3F2BFAE1F2002122B1 /* FilmingUITests */,
@@ -96,6 +121,9 @@
 			children = (
 				C2E73D252BFAE1F0002122B1 /* FilmingApp.swift */,
 				C2E73D272BFAE1F0002122B1 /* ContentView.swift */,
+				C2FC299B2BFB8B8800F8F929 /* SceneKitView.swift */,
+				C2FC299D2BFB9CC700F8F929 /* SplashScreenView.swift */,
+				C2FC299F2BFBA47500F8F929 /* MapView.swift */,
 				C2E73D292BFAE1F2002122B1 /* Assets.xcassets */,
 				C2E73D2B2BFAE1F2002122B1 /* Preview Content */,
 			);
@@ -125,6 +153,21 @@
 				C2E73D422BFAE1F2002122B1 /* FilmingUITestsLaunchTests.swift */,
 			);
 			path = FilmingUITests;
+			sourceTree = "<group>";
+		};
+		C2FC29902BFB869A00F8F929 /* 3DModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2FC29992BFB879500F8F929 /* PENTAX_K1000.usdz */,
+				C2FC29882BFB869A00F8F929 /* Canon_AE-1.usdz */,
+				C2FC29892BFB869A00F8F929 /* Konica_c35.usdz */,
+				C2FC298A2BFB869A00F8F929 /* Leica_M6.usdz */,
+				C2FC298B2BFB869A00F8F929 /* Minolta_X-300.usdz */,
+				C2FC298C2BFB869A00F8F929 /* Olympus_PBR.usdz */,
+				C2FC298E2BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz */,
+				C2FC298F2BFB869A00F8F929 /* Yashica_FX3.usdz */,
+			);
+			path = 3DModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +274,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FC29972BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz in Resources */,
+				C2FC29952BFB869A00F8F929 /* Olympus_PBR.usdz in Resources */,
 				C2E73D2D2BFAE1F2002122B1 /* Preview Assets.xcassets in Resources */,
+				C2FC29912BFB869A00F8F929 /* Canon_AE-1.usdz in Resources */,
+				C2FC29982BFB869A00F8F929 /* Yashica_FX3.usdz in Resources */,
+				C2FC29932BFB869A00F8F929 /* Leica_M6.usdz in Resources */,
+				C2FC299A2BFB879500F8F929 /* PENTAX_K1000.usdz in Resources */,
+				C2FC29942BFB869A00F8F929 /* Minolta_X-300.usdz in Resources */,
+				C2FC29922BFB869A00F8F929 /* Konica_c35.usdz in Resources */,
 				C2E73D2A2BFAE1F2002122B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +310,9 @@
 			files = (
 				C2E73D282BFAE1F0002122B1 /* ContentView.swift in Sources */,
 				C2E73D262BFAE1F0002122B1 /* FilmingApp.swift in Sources */,
+				C2FC29A02BFBA47500F8F929 /* MapView.swift in Sources */,
+				C2FC299C2BFB8B8800F8F929 /* SceneKitView.swift in Sources */,
+				C2FC299E2BFB9CC700F8F929 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
