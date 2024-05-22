@@ -138,3 +138,5 @@ iOSInjectionProject/
 
 # 3D Models
 3DModel
+
+**/GoogleService-Info.plist

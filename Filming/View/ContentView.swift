@@ -16,7 +16,6 @@ struct ContentView: View {
                     Label("홈", systemImage: "house")
                 }
             MapView()
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 .tabItem {
                     Label("현상소", systemImage: "map")
                 }

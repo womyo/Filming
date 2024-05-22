@@ -18,7 +18,7 @@ struct MapView: View {
             }
         }
         .onAppear {
-            Coordinator.shared.checkLocationAuthorization()
+            Coordinator.shared.checkIfLocationServiceIsEnabled()
         }
     }
 }
