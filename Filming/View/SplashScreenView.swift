@@ -9,10 +9,13 @@ import SwiftUI
 
 struct SplashScreenView: View {
     @State private var isActive = false
-    
+
     var body: some View {
         if isActive {
             ContentView()
+//                .onAppear {
+//                    placeViewModel.initData()
+//                }
         } else {
             ZStack {
                 Color(UIColor(red: 0.95, green: 0.92, blue: 0.85, alpha: 1.0)).ignoresSafeArea()

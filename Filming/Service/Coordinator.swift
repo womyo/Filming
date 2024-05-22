@@ -14,11 +14,12 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
     @Published var coord: (Double, Double) = (0.0, 0.0)
     @Published var userLocation: (Double, Double) = (0.0, 0.0)
     @Published var mapBounds: (sw: NMGLatLng, ne: NMGLatLng) = (NMGLatLng(lat: 0, lng: 0), NMGLatLng(lat: 0, lng: 0))
-    @Published var places: [Place] = []
     private var markers: [NMFMarker] = []
     
     var locationManager: CLLocationManager?
     let startInfoWindow = NMFInfoWindow()
+    var placeViewModel = PlaceViewModel()
+    var places: [Place] = []
     
     let view = NMFNaverMapView(frame: .zero)
     
@@ -39,22 +40,19 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
         
         view.mapView.addCameraDelegate(delegate: self)
         view.mapView.touchDelegate = self
-        
     }
     
-    func mapView(_ mapView: NMFMapView, cameraWillChangeByReason reason: Int, animated: Bool) {
-        // 카메라 이동이 시작되기 전 호출되는 함수
-    }
+    func mapView(_ mapView: NMFMapView, cameraWillChangeByReason reason: Int, animated: Bool) {}
     
-    func mapView(_ mapView: NMFMapView, cameraIsChangingByReason reason: Int) {
-        // 카메라의 위치가 변경되면 호출되는 함수
-    }
+    func mapView(_ mapView: NMFMapView, cameraIsChangingByReason reason: Int) {}
     
     func mapView(_ mapView: NMFMapView, cameraDidChangeByReason reason: Int, animated: Bool) {
         let bounds = mapView.contentBounds
         mapBounds = (bounds.southWest, bounds.northEast)
         
-        fetchPlacesWithinBounds()
+        Task {
+            await fetchPlacesWithinBounds()
+        }
     }
     
     func checkLocationAuthorization() {
@@ -97,7 +95,7 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
             let lng = locationManager.location?.coordinate.longitude
             let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: lat ?? 0.0, lng: lng ?? 0.0), zoomTo: 14)
             cameraUpdate.animation = .easeIn
-            cameraUpdate.animationDuration = 0.3
+            cameraUpdate.animationDuration = 0.2
             
             let locationOverlay = view.mapView.locationOverlay
             locationOverlay.location = NMGLatLng(lat: lat ?? 0.0, lng: lng ?? 0.0)
@@ -112,17 +110,12 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
         }
     }
     
-    func fetchPlacesWithinBounds() {
+    @MainActor
+    func fetchPlacesWithinBounds() async {
         let sw = mapBounds.sw
         let ne = mapBounds.ne
         
-        let allPlaces = [Place(id: "1", name: "A", lat: 37.5661, lng: 126.978388)]
-        
-        
-        places = allPlaces.filter { place in
-            return place.lat >= sw.lat && place.lat <= ne.lat &&
-                   place.lng >= sw.lng && place.lng <= ne.lng
-        }
+        await placeViewModel.fetchPlaces(sw: sw, ne: ne)
         
         clearAllMarkers()
         addMarkers()
@@ -133,7 +126,7 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
     }
     
     func addMarkers() {
-        places.forEach { place in
+        placeViewModel.places.forEach { place in
             let marker = NMFMarker()
             marker.iconImage = NMF_MARKER_IMAGE_DEFAULT
             marker.position = NMGLatLng(lat: place.lat, lng: place.lng)
