@@ -10,7 +10,7 @@ import FirebaseFirestore
 import NMapsMap
 
 @Observable
-class PlaceViewModel: ObservableObject {
+class PlaceViewModel {
     private let dbCollection = Firestore.firestore().collection("places")
     private(set) var places: [Place]
     
@@ -37,7 +37,9 @@ class PlaceViewModel: ObservableObject {
                 try? document.data(as: Place.self)
             }
             
-            self.places = places
+            await MainActor.run {
+                self.places = places
+            }
         } catch {
             print("Error fetching: \(error.localizedDescription)")
         }

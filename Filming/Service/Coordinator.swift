@@ -19,7 +19,6 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
     var locationManager: CLLocationManager?
     let startInfoWindow = NMFInfoWindow()
     var placeViewModel = PlaceViewModel()
-    var places: [Place] = []
     
     let view = NMFNaverMapView(frame: .zero)
     
@@ -80,7 +79,7 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
             if CLLocationManager.locationServicesEnabled() {
                 DispatchQueue.main.async {
                     self.locationManager = CLLocationManager()
-                    self.locationManager!.delegate = self
+                    self.locationManager?.delegate = self
                     self.checkLocationAuthorization()
                 }
             } else {
@@ -94,7 +93,7 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
             let lat = locationManager.location?.coordinate.latitude
             let lng = locationManager.location?.coordinate.longitude
             let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: lat ?? 0.0, lng: lng ?? 0.0), zoomTo: 14)
-            cameraUpdate.animation = .easeIn
+            cameraUpdate.animation = .fly
             cameraUpdate.animationDuration = 0.2
             
             let locationOverlay = view.mapView.locationOverlay
@@ -115,7 +114,7 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
         let sw = mapBounds.sw
         let ne = mapBounds.ne
         
-        await placeViewModel.fetchPlaces(sw: sw, ne: ne)
+//        await placeViewModel.fetchPlaces(sw: sw, ne: ne)
         
         clearAllMarkers()
         addMarkers()
@@ -126,7 +125,7 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
     }
     
     func addMarkers() {
-        placeViewModel.places.forEach { place in
+        Place.savePlaces.forEach { place in
             let marker = NMFMarker()
             marker.iconImage = NMF_MARKER_IMAGE_DEFAULT
             marker.position = NMGLatLng(lat: place.lat, lng: place.lng)

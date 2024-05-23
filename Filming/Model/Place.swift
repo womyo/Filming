@@ -45,6 +45,7 @@ struct Place: Identifiable, Codable, Hashable {
         Place(name: "팔레트사진관", lat: 37.5373986, lng: 127.0767172),
         Place(name: "옥상필름", lat: 37.5655778, lng: 127.0020905),
         Place(name: "중앙칼라", lat: 37.5660569, lng: 127.0065923),
-        Place(name: "이룸포토현상소", lat: 37.5704878, lng: 126.9846332)
+        Place(name: "이룸포토현상소", lat: 37.5704878, lng: 126.9846332),
+        Place(name: "다크룸서울", lat: 37.5494935, lng: 126.9192192)
     ]
 }

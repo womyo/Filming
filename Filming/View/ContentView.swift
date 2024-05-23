@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            SceneKitView(modelName: "Minolta_X-300.usdz")
-                .frame(height: 400)
+            HomeView()
                 .tabItem {
                     Label("홈", systemImage: "house")
                 }
