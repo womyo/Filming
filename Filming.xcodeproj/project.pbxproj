@@ -17,6 +17,8 @@
 		C25991702BFCEADB00B797C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C259916F2BFCEADB00B797C2 /* GoogleService-Info.plist */; };
 		C25991732BFCEC4900B797C2 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25991722BFCEC4900B797C2 /* Place.swift */; };
 		C25991762BFCF17800B797C2 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25991752BFCF17800B797C2 /* PlaceViewModel.swift */; };
+		C2AEBA752BFF9AC100AB1337 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AEBA742BFF9AC100AB1337 /* RemoteImageView.swift */; };
+		C2AEBA792BFF9B8E00AB1337 /* RemoteImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AEBA782BFF9B8E00AB1337 /* RemoteImageViewModel.swift */; };
 		C2CBF5612BFEF8110071C5E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBF5602BFEF8110071C5E5 /* HomeView.swift */; };
 		C2CBF5832BFF2B620071C5E5 /* BrandsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBF5822BFF2B620071C5E5 /* BrandsScrollView.swift */; };
 		C2CBF5852BFF39CA0071C5E5 /* ItemGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBF5842BFF39CA0071C5E5 /* ItemGridView.swift */; };
@@ -73,6 +75,8 @@
 		C259916F2BFCEADB00B797C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C25991722BFCEC4900B797C2 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		C25991752BFCF17800B797C2 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		C2AEBA742BFF9AC100AB1337 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		C2AEBA782BFF9B8E00AB1337 /* RemoteImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageViewModel.swift; sourceTree = "<group>"; };
 		C2CBF5602BFEF8110071C5E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C2CBF5822BFF2B620071C5E5 /* BrandsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsScrollView.swift; sourceTree = "<group>"; };
 		C2CBF5842BFF39CA0071C5E5 /* ItemGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGridView.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				C25991752BFCF17800B797C2 /* PlaceViewModel.swift */,
+				C2AEBA782BFF9B8E00AB1337 /* RemoteImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				C2CBF5602BFEF8110071C5E5 /* HomeView.swift */,
 				C2CBF5822BFF2B620071C5E5 /* BrandsScrollView.swift */,
 				C2CBF5842BFF39CA0071C5E5 /* ItemGridView.swift */,
+				C2AEBA742BFF9AC100AB1337 /* RemoteImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -526,11 +532,13 @@
 				C2E73D262BFAE1F0002122B1 /* FilmingApp.swift in Sources */,
 				C2CBF5612BFEF8110071C5E5 /* HomeView.swift in Sources */,
 				C2FC29A02BFBA47500F8F929 /* MapView.swift in Sources */,
+				C2AEBA752BFF9AC100AB1337 /* RemoteImageView.swift in Sources */,
 				C2CBF5852BFF39CA0071C5E5 /* ItemGridView.swift in Sources */,
 				C25991732BFCEC4900B797C2 /* Place.swift in Sources */,
 				C2FC29A62BFBAD7900F8F929 /* NaverMap.swift in Sources */,
 				C2FC299C2BFB8B8800F8F929 /* SceneKitView.swift in Sources */,
 				C2FC299E2BFB9CC700F8F929 /* SplashScreenView.swift in Sources */,
+				C2AEBA792BFF9B8E00AB1337 /* RemoteImageViewModel.swift in Sources */,
 				C2CBF5832BFF2B620071C5E5 /* BrandsScrollView.swift in Sources */,
 				C24145092BFBB1F8002EC0F9 /* Coordinator.swift in Sources */,
 			);

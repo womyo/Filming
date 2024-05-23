@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-
-
-
 struct BrandsScrollView: View {
     @State private var brands: [String: String] = [
         "Nikon": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nikon_Logo.svg/1024px-Nikon_Logo.svg.png",
@@ -38,18 +35,13 @@ struct BrandsScrollView: View {
                 HStack() {
                     ForEach(brands.sorted { $0.key < $1.key }, id: \.key) { key, value in
                         VStack {
-                            AsyncImage(url: value!) { image in
-                                image
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 60, height: 60)
-                                    .clipShape(Circle())
-                                    .overlay(
-                                        Circle().stroke(Color.gray, lineWidth: 0.1)
-                                    )
-                            } placeholder: {
-                                ProgressView()
-                            }
+                            RemoteImageView(url: value)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 60, height: 60)
+                                .clipShape(Circle())
+                                .overlay(
+                                    Circle().stroke(Color.gray, lineWidth: 0.1)
+                                )
                             Text(key)
                                 .font(.caption)
                         }
