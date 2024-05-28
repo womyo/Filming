@@ -12,15 +12,20 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            BrandsScrollView()
-            Spacer()
-            ItemGridView()
-                .searchable(text: $searchText,
-                            placement: .navigationBarDrawer(displayMode: .always),
-                            prompt: "Search")
-                .textInputAutocapitalization(.never)
-                .navigationTitle("Filming")
-                .navigationBarTitleDisplayMode(.inline)
+            ScrollView {
+                VStack(spacing: 30) {
+                    CarouselAdsView()
+                    BrandsScrollView()
+                    ItemGridView()
+                }
+            }
+            .searchable(text: $searchText,
+                        placement: .navigationBarDrawer(displayMode: .always),
+                        prompt: "Search")
+            .textInputAutocapitalization(.never)
+            .navigationTitle("Filming")
+            .navigationBarTitleDisplayMode(.inline)
+            .padding(.vertical)
         }
     }
 }
