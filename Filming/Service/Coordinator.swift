@@ -125,7 +125,7 @@ class Coordinator: NSObject, ObservableObject, NMFMapViewCameraDelegate, NMFMapV
     }
     
     func addMarkers() {
-        Place.savePlaces.forEach { place in
+        savePlaces.forEach { place in
             let marker = NMFMarker()
             marker.iconImage = NMF_MARKER_IMAGE_DEFAULT
             marker.position = NMGLatLng(lat: place.lat, lng: place.lng)

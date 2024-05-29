@@ -11,6 +11,8 @@
 		63906C341546AC498BDD3157 /* Pods_FilmingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6837DFDA1EAFA5C0F2E28C09 /* Pods_FilmingTests.framework */; };
 		848076C1AD2F0D929EE45E6F /* Pods_Filming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6E58E7AD6466204E1E47A3 /* Pods_Filming.framework */; };
 		C234D3312C0076B7003A0D74 /* CarouselAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C234D3302C0076B7003A0D74 /* CarouselAdsView.swift */; };
+		C24067552C06276B0088A163 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24067542C06276B0088A163 /* TabBarViewModel.swift */; };
+		C24067572C0629490088A163 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24067562C0629490088A163 /* CustomTabBarView.swift */; };
 		C24145092BFBB1F8002EC0F9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24145082BFBB1F8002EC0F9 /* Coordinator.swift */; };
 		C25991692BFCE7C600B797C2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C25991682BFCE7C600B797C2 /* FirebaseAuth */; };
 		C259916B2BFCE7C600B797C2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C259916A2BFCE7C600B797C2 /* FirebaseFirestore */; };
@@ -18,13 +20,14 @@
 		C25991702BFCEADB00B797C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C259916F2BFCEADB00B797C2 /* GoogleService-Info.plist */; };
 		C25991732BFCEC4900B797C2 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25991722BFCEC4900B797C2 /* Place.swift */; };
 		C25991762BFCF17800B797C2 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25991752BFCF17800B797C2 /* PlaceViewModel.swift */; };
+		C26CAE0C2C06BA1D00EA1AA8 /* BrandDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26CAE0B2C06BA1D00EA1AA8 /* BrandDetailView.swift */; };
 		C2AEBA752BFF9AC100AB1337 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AEBA742BFF9AC100AB1337 /* RemoteImageView.swift */; };
 		C2AEBA792BFF9B8E00AB1337 /* RemoteImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AEBA782BFF9B8E00AB1337 /* RemoteImageViewModel.swift */; };
 		C2CBF5612BFEF8110071C5E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBF5602BFEF8110071C5E5 /* HomeView.swift */; };
 		C2CBF5832BFF2B620071C5E5 /* BrandsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBF5822BFF2B620071C5E5 /* BrandsScrollView.swift */; };
-		C2CBF5852BFF39CA0071C5E5 /* ItemGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBF5842BFF39CA0071C5E5 /* ItemGridView.swift */; };
+		C2CBF5852BFF39CA0071C5E5 /* TipsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CBF5842BFF39CA0071C5E5 /* TipsGridView.swift */; };
 		C2E73D262BFAE1F0002122B1 /* FilmingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D252BFAE1F0002122B1 /* FilmingApp.swift */; };
-		C2E73D282BFAE1F0002122B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D272BFAE1F0002122B1 /* ContentView.swift */; };
+		C2E73D282BFAE1F0002122B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D272BFAE1F0002122B1 /* MainView.swift */; };
 		C2E73D2A2BFAE1F2002122B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E73D292BFAE1F2002122B1 /* Assets.xcassets */; };
 		C2E73D2D2BFAE1F2002122B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E73D2C2BFAE1F2002122B1 /* Preview Assets.xcassets */; };
 		C2E73D372BFAE1F2002122B1 /* FilmingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D362BFAE1F2002122B1 /* FilmingTests.swift */; };
@@ -32,11 +35,13 @@
 		C2E73D432BFAE1F2002122B1 /* FilmingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E73D422BFAE1F2002122B1 /* FilmingUITestsLaunchTests.swift */; };
 		C2ED32B12C05A487006677F5 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED32B02C05A487006677F5 /* Camera.swift */; };
 		C2ED32B32C05AED0006677F5 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED32B22C05AED0006677F5 /* SafariView.swift */; };
+		C2ED32B62C05CCB1006677F5 /* BrandsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED32B52C05CCB1006677F5 /* BrandsGridView.swift */; };
+		C2ED32B82C05CD50006677F5 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED32B72C05CD50006677F5 /* Mock.swift */; };
+		C2ED32BA2C05D3D7006677F5 /* Olympus_OM-1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2ED32B92C05D3D7006677F5 /* Olympus_OM-1.usdz */; };
 		C2FC29912BFB869A00F8F929 /* Canon_AE-1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC29882BFB869A00F8F929 /* Canon_AE-1.usdz */; };
 		C2FC29922BFB869A00F8F929 /* Konica_c35.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC29892BFB869A00F8F929 /* Konica_c35.usdz */; };
 		C2FC29932BFB869A00F8F929 /* Leica_M6.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298A2BFB869A00F8F929 /* Leica_M6.usdz */; };
 		C2FC29942BFB869A00F8F929 /* Minolta_X-300.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298B2BFB869A00F8F929 /* Minolta_X-300.usdz */; };
-		C2FC29952BFB869A00F8F929 /* Olympus_PBR.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298C2BFB869A00F8F929 /* Olympus_PBR.usdz */; };
 		C2FC29972BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298E2BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz */; };
 		C2FC29982BFB869A00F8F929 /* Yashica_FX3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC298F2BFB869A00F8F929 /* Yashica_FX3.usdz */; };
 		C2FC299A2BFB879500F8F929 /* PENTAX_K1000.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FC29992BFB879500F8F929 /* PENTAX_K1000.usdz */; };
@@ -73,19 +78,22 @@
 		B6A917E1918F33883642C773 /* Pods-FilmingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmingTests.debug.xcconfig"; path = "Target Support Files/Pods-FilmingTests/Pods-FilmingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C20AD1C92BFBBC88002EF66D /* Filming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C234D3302C0076B7003A0D74 /* CarouselAdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselAdsView.swift; sourceTree = "<group>"; };
+		C24067542C06276B0088A163 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		C24067562C0629490088A163 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		C24145082BFBB1F8002EC0F9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C25991652BFCCD6900B797C2 /* FilmingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25991662BFCCD6900B797C2 /* FilmingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C259916F2BFCEADB00B797C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C25991722BFCEC4900B797C2 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		C25991752BFCF17800B797C2 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		C26CAE0B2C06BA1D00EA1AA8 /* BrandDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDetailView.swift; sourceTree = "<group>"; };
 		C2AEBA742BFF9AC100AB1337 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		C2AEBA782BFF9B8E00AB1337 /* RemoteImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageViewModel.swift; sourceTree = "<group>"; };
 		C2CBF5602BFEF8110071C5E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C2CBF5822BFF2B620071C5E5 /* BrandsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsScrollView.swift; sourceTree = "<group>"; };
-		C2CBF5842BFF39CA0071C5E5 /* ItemGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGridView.swift; sourceTree = "<group>"; };
+		C2CBF5842BFF39CA0071C5E5 /* TipsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsGridView.swift; sourceTree = "<group>"; };
 		C2E73D252BFAE1F0002122B1 /* FilmingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmingApp.swift; sourceTree = "<group>"; };
-		C2E73D272BFAE1F0002122B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2E73D272BFAE1F0002122B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C2E73D292BFAE1F2002122B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E73D2C2BFAE1F2002122B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2E73D362BFAE1F2002122B1 /* FilmingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmingTests.swift; sourceTree = "<group>"; };
@@ -93,11 +101,13 @@
 		C2E73D422BFAE1F2002122B1 /* FilmingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C2ED32B02C05A487006677F5 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		C2ED32B22C05AED0006677F5 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		C2ED32B52C05CCB1006677F5 /* BrandsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsGridView.swift; sourceTree = "<group>"; };
+		C2ED32B72C05CD50006677F5 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		C2ED32B92C05D3D7006677F5 /* Olympus_OM-1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Olympus_OM-1.usdz"; sourceTree = "<group>"; };
 		C2FC29882BFB869A00F8F929 /* Canon_AE-1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Canon_AE-1.usdz"; sourceTree = "<group>"; };
 		C2FC29892BFB869A00F8F929 /* Konica_c35.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Konica_c35.usdz; sourceTree = "<group>"; };
 		C2FC298A2BFB869A00F8F929 /* Leica_M6.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Leica_M6.usdz; sourceTree = "<group>"; };
 		C2FC298B2BFB869A00F8F929 /* Minolta_X-300.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Minolta_X-300.usdz"; sourceTree = "<group>"; };
-		C2FC298C2BFB869A00F8F929 /* Olympus_PBR.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Olympus_PBR.usdz; sourceTree = "<group>"; };
 		C2FC298E2BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "vintage_minolta_x-700_camera.usdz"; sourceTree = "<group>"; };
 		C2FC298F2BFB869A00F8F929 /* Yashica_FX3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Yashica_FX3.usdz; sourceTree = "<group>"; };
 		C2FC29992BFB879500F8F929 /* PENTAX_K1000.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = PENTAX_K1000.usdz; sourceTree = "<group>"; };
@@ -165,6 +175,7 @@
 			children = (
 				C25991722BFCEC4900B797C2 /* Place.swift */,
 				C2ED32B02C05A487006677F5 /* Camera.swift */,
+				C2ED32B72C05CD50006677F5 /* Mock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +185,7 @@
 			children = (
 				C25991752BFCF17800B797C2 /* PlaceViewModel.swift */,
 				C2AEBA782BFF9B8E00AB1337 /* RemoteImageViewModel.swift */,
+				C24067542C06276B0088A163 /* TabBarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -235,15 +247,24 @@
 			path = FilmingUITests;
 			sourceTree = "<group>";
 		};
+		C2ED32B42C05C886006677F5 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C2FC299F2BFBA47500F8F929 /* MapView.swift */,
+				C2FC29A52BFBAD7900F8F929 /* NaverMap.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		C2FC29902BFB869A00F8F929 /* 3DModel */ = {
 			isa = PBXGroup;
 			children = (
+				C2ED32B92C05D3D7006677F5 /* Olympus_OM-1.usdz */,
 				C2FC29992BFB879500F8F929 /* PENTAX_K1000.usdz */,
 				C2FC29882BFB869A00F8F929 /* Canon_AE-1.usdz */,
 				C2FC29892BFB869A00F8F929 /* Konica_c35.usdz */,
 				C2FC298A2BFB869A00F8F929 /* Leica_M6.usdz */,
 				C2FC298B2BFB869A00F8F929 /* Minolta_X-300.usdz */,
-				C2FC298C2BFB869A00F8F929 /* Olympus_PBR.usdz */,
 				C2FC298E2BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz */,
 				C2FC298F2BFB869A00F8F929 /* Yashica_FX3.usdz */,
 			);
@@ -253,17 +274,19 @@
 		C2FC29A42BFBACA200F8F929 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C2E73D272BFAE1F0002122B1 /* ContentView.swift */,
+				C2ED32B42C05C886006677F5 /* Map */,
+				C2E73D272BFAE1F0002122B1 /* MainView.swift */,
 				C2FC299B2BFB8B8800F8F929 /* SceneKitView.swift */,
 				C2FC299D2BFB9CC700F8F929 /* SplashScreenView.swift */,
-				C2FC299F2BFBA47500F8F929 /* MapView.swift */,
-				C2FC29A52BFBAD7900F8F929 /* NaverMap.swift */,
 				C2CBF5602BFEF8110071C5E5 /* HomeView.swift */,
 				C2CBF5822BFF2B620071C5E5 /* BrandsScrollView.swift */,
-				C2CBF5842BFF39CA0071C5E5 /* ItemGridView.swift */,
+				C2CBF5842BFF39CA0071C5E5 /* TipsGridView.swift */,
 				C2AEBA742BFF9AC100AB1337 /* RemoteImageView.swift */,
 				C234D3302C0076B7003A0D74 /* CarouselAdsView.swift */,
 				C2ED32B22C05AED0006677F5 /* SafariView.swift */,
+				C2ED32B52C05CCB1006677F5 /* BrandsGridView.swift */,
+				C24067562C0629490088A163 /* CustomTabBarView.swift */,
+				C26CAE0B2C06BA1D00EA1AA8 /* BrandDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,7 +422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FC29972BFB869A00F8F929 /* vintage_minolta_x-700_camera.usdz in Resources */,
-				C2FC29952BFB869A00F8F929 /* Olympus_PBR.usdz in Resources */,
 				C2E73D2D2BFAE1F2002122B1 /* Preview Assets.xcassets in Resources */,
 				C2FC29912BFB869A00F8F929 /* Canon_AE-1.usdz in Resources */,
 				C2FC29982BFB869A00F8F929 /* Yashica_FX3.usdz in Resources */,
@@ -409,6 +431,7 @@
 				C25991702BFCEADB00B797C2 /* GoogleService-Info.plist in Resources */,
 				C2FC29922BFB869A00F8F929 /* Konica_c35.usdz in Resources */,
 				C2E73D2A2BFAE1F2002122B1 /* Assets.xcassets in Resources */,
+				C2ED32BA2C05D3D7006677F5 /* Olympus_OM-1.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,22 +559,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24067572C0629490088A163 /* CustomTabBarView.swift in Sources */,
+				C24067552C06276B0088A163 /* TabBarViewModel.swift in Sources */,
 				C2ED32B12C05A487006677F5 /* Camera.swift in Sources */,
-				C2E73D282BFAE1F0002122B1 /* ContentView.swift in Sources */,
+				C2E73D282BFAE1F0002122B1 /* MainView.swift in Sources */,
 				C25991762BFCF17800B797C2 /* PlaceViewModel.swift in Sources */,
 				C2E73D262BFAE1F0002122B1 /* FilmingApp.swift in Sources */,
 				C2CBF5612BFEF8110071C5E5 /* HomeView.swift in Sources */,
 				C234D3312C0076B7003A0D74 /* CarouselAdsView.swift in Sources */,
 				C2FC29A02BFBA47500F8F929 /* MapView.swift in Sources */,
 				C2AEBA752BFF9AC100AB1337 /* RemoteImageView.swift in Sources */,
-				C2CBF5852BFF39CA0071C5E5 /* ItemGridView.swift in Sources */,
+				C2CBF5852BFF39CA0071C5E5 /* TipsGridView.swift in Sources */,
 				C25991732BFCEC4900B797C2 /* Place.swift in Sources */,
 				C2FC29A62BFBAD7900F8F929 /* NaverMap.swift in Sources */,
+				C26CAE0C2C06BA1D00EA1AA8 /* BrandDetailView.swift in Sources */,
 				C2FC299C2BFB8B8800F8F929 /* SceneKitView.swift in Sources */,
 				C2ED32B32C05AED0006677F5 /* SafariView.swift in Sources */,
 				C2FC299E2BFB9CC700F8F929 /* SplashScreenView.swift in Sources */,
+				C2ED32B82C05CD50006677F5 /* Mock.swift in Sources */,
 				C2AEBA792BFF9B8E00AB1337 /* RemoteImageViewModel.swift in Sources */,
 				C2CBF5832BFF2B620071C5E5 /* BrandsScrollView.swift in Sources */,
+				C2ED32B62C05CCB1006677F5 /* BrandsGridView.swift in Sources */,
 				C24145092BFBB1F8002EC0F9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

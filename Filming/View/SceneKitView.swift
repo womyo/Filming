@@ -11,6 +11,10 @@ import SceneKit
 struct SceneKitView: UIViewRepresentable {
     var modelName: String
     
+    init(modelName: String) {
+        self.modelName = modelName
+    }
+    
     func makeUIView(context: Context) -> SCNView {
         let scnView = SCNView()
         scnView.allowsCameraControl = true

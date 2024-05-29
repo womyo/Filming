@@ -46,7 +46,7 @@ class PlaceViewModel {
     }
     
     func initData() {
-        for place in Place.savePlaces {
+        for place in savePlaces {
             addPlace(place: place)
         }
     }

@@ -12,9 +12,9 @@ struct CarouselAdsView: View {
     @State private var index = 0
     @State private var selected: String = ""
     private let imageNames: [String] = [
-        "https://vintagecameradigest.com/wp-content/uploads/2021/03/minolta-1960.jpg?w=2046",
         "https://flexible.img.hani.co.kr/flexible/normal/590/234/imgdb/resize/2007/1002/119128907352_20071002.jpg",
-        "https://dimg.donga.com/wps/NEWS/IMAGE/2023/11/29/122399819.1.jpg"
+        "https://dimg.donga.com/wps/NEWS/IMAGE/2023/11/29/122399819.1.jpg",
+        "https://vintagecameradigest.com/wp-content/uploads/2021/03/minolta-1960.jpg?w=2046"
     ]
     
     var body: some View {

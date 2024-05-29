@@ -13,10 +13,6 @@ class ImageCache {
     
     private let cache = NSCache<NSString, UIImage>()
     
-    private init() {
-        cache.totalCostLimit = 50 * 1024 * 1024
-    }
-    
     func set(_ image: UIImage, forKey key: String) {
         cache.setObject(image, forKey: key as NSString)
     }
@@ -55,5 +51,9 @@ class RemoteImageViewModel: ObservableObject {
             }
         }
         task?.resume()
+    }
+    
+    deinit {
+        task?.cancel()
     }
 }

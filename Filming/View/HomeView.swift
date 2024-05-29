@@ -9,14 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     @State var searchText = ""
+    @Binding var path: NavigationPath
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollView {
                 VStack(spacing: 30) {
                     CarouselAdsView()
-                    BrandsScrollView()
-                    ItemGridView()
+                    BrandsScrollView(path: $path)
+                    TipsGridView()
                 }
             }
             .searchable(text: $searchText,
@@ -30,6 +31,6 @@ struct HomeView: View {
     }
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView()
+//}
